@@ -62,7 +62,6 @@ var writeBerryFruits = function (allBerries) {
 };
 
 writeBerryFruits ([blueberries, grapes, redCurrant]);
-writeBerryFruits ([blueberries, grapes, redCurrant]);
 
 
 

@@ -28,7 +28,12 @@ var berryFruits = [blueberries, grapes, redCurrant];
 
 //this is a loop which looks inside the specified array, and asks it to pull specific strands of information (name, energy, protin etc) from item (which refers to one item within the array). Inside the loop, we created a data list.
 
-berryFruits.forEach (function (item) {
+
+// a function is a fancy way of saying a variable that contains code and is reusable 
+
+
+var writeBerryFruits = function (allBerries) {
+    allBerries.forEach (function (item) {
     document.write("<dl>");
     
     document.write("<dt>Latin Name:<dt>");
@@ -47,6 +52,11 @@ berryFruits.forEach (function (item) {
     document.write("<dd>" + item.protein + "</dd>");
     
     document.write("</dl>");
-});
+    });
+};
+
+writeBerryFruits ([blueberries, grapes, redCurrant]);
+writeBerryFruits ([blueberries, grapes, redCurrant]);
+
 
 

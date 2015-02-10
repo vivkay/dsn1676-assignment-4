@@ -26,7 +26,7 @@ var redCurrant = {
 
 var berryFruits = [blueberries, grapes, redCurrant];
 
-//this is a loop which looks inside the specified array, and asks it to pull specific strands of information (name, energy, protin etc) in a data list
+//this is a loop which looks inside the specified array, and asks it to pull specific strands of information (name, energy, protin etc) from item (which refers to one item within the array). Inside the loop, we created a data list.
 
 berryFruits.forEach (function (item) {
     document.write("<dl>");

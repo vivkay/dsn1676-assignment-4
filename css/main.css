@@ -1,7 +1,30 @@
+dl {
+    background-color: beige;
+    overflow: hidden;
+    line-height: 1.5rem;
+    border: 5px solid pink;
+    padding: 10px;
+}
+
 dt {
     color: purple;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "helvetica", sans-serif;
+    float: left;
+    clear: left;
+    width: 8em;
+}
+
+dt:after {
+    content: ":";
 }
 
 dd {
-    background-color: yellow;
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em;
+    float: left;
+    font-weight: light;
+    color: purple;
 }
+

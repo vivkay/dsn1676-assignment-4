@@ -1,4 +1,5 @@
 var blueberries = {
+    name: "Bouncing Blueberries",
     latinName: "Vaccinum corymbosum",
     growsOnShrub: true,
     energy: "240 kJ",
@@ -7,6 +8,7 @@ var blueberries = {
 };
 
 var grapes = {
+    name: "Googly Grapes",
     latinName: "Vitis vinifera",
     growsOnShrub: false,
     energy: "288 kJ",
@@ -15,6 +17,7 @@ var grapes = {
 };
 
 var redCurrant = {
+    name: "Ravishing Red Currants",
     latinName: "Ribes rubrum",
     growsOnShrub: true,
     energy: "234 kJ",
@@ -35,20 +38,23 @@ var berryFruits = [blueberries, grapes, redCurrant];
 var writeBerryFruits = function (allBerries) {
     allBerries.forEach (function (item) {
     document.write("<dl>");
+        
+    document.write("<dt>Berry</dt>");
+    document.write("<dd>" + item.name + "</dd>");
     
-    document.write("<dt>Latin Name:<dt>");
+    document.write("<dt>Latin Name</dt>");
     document.write("<dd>" + item.latinName + "</dd>");
     
-    document.write("<dt>Grows on Shrub<dt>");
+    document.write("<dt>Grows on Shrub</dt>");
     document.write("<dd>" + item.growsOnShrub + "</dd>");
     
-    document.write("<dt>Energy<dt>");
+    document.write("<dt>Energy</dt>");
     document.write("<dd>" + item.energy + "</dd>");
     
-    document.write("<dt>Carbohydrates<dt>");
+    document.write("<dt>Carbohydrates</dt>");
     document.write("<dd>" + item.carbohydrates + "</dd>");
     
-    document.write("<dt>Protein<dt>");
+    document.write("<dt>Protein</dt>");
     document.write("<dd>" + item.protein + "</dd>");
     
     document.write("</dl>");

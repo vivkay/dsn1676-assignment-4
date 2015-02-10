@@ -1,9 +1,14 @@
+.ground {
+    background-color: purple;
+}
+
 dl {
     background-color: beige;
     overflow: hidden;
     line-height: 1.5rem;
     border: 5px solid pink;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 25px;
 }
 
 dt {
@@ -13,7 +18,8 @@ dt {
     font-family: "helvetica", sans-serif;
     float: left;
     clear: left;
-    width: 8em;
+    width: 15em;
+    border-right: 2px solid pink; 
 }
 
 dt:after {
